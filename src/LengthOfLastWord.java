@@ -2,7 +2,7 @@ public class LengthOfLastWord {
 
     public static void main(String[] args) {
 
-        String str="How are you Osman?";
+        String str="        How are you     Osman?      ";
         System.out.println(lengthOfLastWord(str));
 
 
