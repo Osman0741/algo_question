@@ -17,4 +17,13 @@ public class NumberOfPeopleInTheBus {
 
         return stops.stream().mapToInt(p->p[0] -p[1]).sum();
     }
+    public static int countPassengers2(ArrayList<int[]> stops){
+
+        int numOfPeople = 0;
+        for (int i = 0; i < stops.size(); i++) {
+            numOfPeople = numOfPeople + stops.get(i)[0]-stops.get(i)[1];
+        }
+        return numOfPeople;
+    }
+
 }
